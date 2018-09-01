@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Library</title>
+    <link rel="stylesheet" href="library.css" />
+    <script src="library.js"></script>
+  </head>
+  <body>
+
+    <main>
+      <div class="title-box">
+        <h1 class="title">Welcome to the library</h1>
+        <p>Please feel free to make an entry</p>
+      </div>
+
+      <div id="shelf"></div>
+
+      <div class="form-box">
+        <form id="form" onsubmit="addToLibrary()">
+          <input id="title" class="input" type="text" name="title" placeholder="Title" onchange="titleUpdate()" />
+          <input id="author" class="input" type="text" name="author" placeholder="Author" onchange="authorUpdate()" />
+          <button id="book-submit" class="input" type="submit">Submit Entry</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

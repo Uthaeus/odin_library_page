@@ -1,0 +1,42 @@
+.title-box {
+  text-align: center;
+  font-weight: bold;
+  margin: 25px;
+  padding: 25px;
+}
+
+.title {
+  font-size: 2em;
+}
+
+.form-box {
+  width: 80%;
+  border: 1px solid black;
+  min-height: 300px;
+  text-align: center;
+  margin-left: 10%;
+  -webkit-box-shadow: 10px 10px 11px 1px rgba(74,74,74,1);
+  -moz-box-shadow: 10px 10px 11px 1px rgba(74,74,74,1);
+  box-shadow: 10px 10px 11px 1px rgba(74,74,74,1);
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  margin-left: 10%;
+  width: 80%;
+}
+
+.input {
+  width: 60%;
+  margin: 20px;
+  padding: 12px;
+}
+
+form button {
+  color: white;
+  background-color: #345589;
+}
