@@ -15,6 +15,8 @@
   min-height: 300px;
   text-align: center;
   margin-left: 10%;
+  margin-top: 45px;
+  margin-bottom: 55px;
   -webkit-box-shadow: 10px 10px 11px 1px rgba(74,74,74,1);
   -moz-box-shadow: 10px 10px 11px 1px rgba(74,74,74,1);
   box-shadow: 10px 10px 11px 1px rgba(74,74,74,1);
@@ -39,4 +41,24 @@
 form button {
   color: white;
   background-color: #345589;
+}
+
+#shelf {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.libraryItem {
+  text-align: center;
+  border: 1px solid grey;
+  margin: 25px;
+  padding: 20px;
+  width: 25%;
+  -webkit-box-shadow: 10px 10px 11px 1px rgba(74,74,74,1);
+  -moz-box-shadow: 10px 10px 11px 1px rgba(74,74,74,1);
+  box-shadow: 10px 10px 11px 1px rgba(74,74,74,1);
+}
+
+main {
+  padding: 35px;
 }
