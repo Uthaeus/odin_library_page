@@ -1,21 +1,25 @@
 
 
-const Library = {
-  'The Stand': 'Stephen King',
-  'Don Quixote': 'Miguel de Cervantes',
-  'The Lord of the Rings': 'J.R.R. Tolkien',
-  'A Tale of Two Cities': 'Charles Dickens'
-};
+const Library = [
+  {'Title': 'The Stand',
+  'Author': 'Stephen King'},
+  {'Title': 'Don Quixote',
+  'Author': 'Miguel de Cervantes'},
+  {'Title': 'The Lord of the Rings',
+  'Author': 'J.R.R. Tolkien'},
+  {'Title': 'A Tale of Two Cities',
+  'Author': 'Charles Dickens'}
+];
 
 libraryDisplay = () => {
-  return Object.keys(Library).map((key) => {
+  return Library.map((book) => {
     let node = document.createElement('div');
     node.className = "libraryItem";
     let head = document.createElement('h1');
-    let t = document.createTextNode(key);
+    let t = document.createTextNode(book['Title']);
     head.appendChild(t);
     let body = document.createElement('h4');
-    let a = document.createTextNode(Library[key]);
+    let a = document.createTextNode(book['Author']);
     body.appendChild(a);
     node.appendChild(head);
     node.appendChild(body);
