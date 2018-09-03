@@ -31,7 +31,7 @@ addToLibrary = () => {
   let title = document.getElementById('title').value;
   let author = document.getElementById('author').value;
   // let temp = new Book(title, author);
-  Library[title] = author;
+  Library.push({'Title': title, 'Author': author})
   libraryDisplay();
 }
 
