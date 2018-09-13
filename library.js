@@ -2,13 +2,17 @@
 
 const Library = [
   {'Title': 'The Stand',
-  'Author': 'Stephen King'},
+  'Author': 'Stephen King',
+  'Pages': 1219},
   {'Title': 'Don Quixote',
-  'Author': 'Miguel de Cervantes'},
+  'Author': 'Miguel de Cervantes',
+  'Pages': 365},
   {'Title': 'The Lord of the Rings',
-  'Author': 'J.R.R. Tolkien'},
+  'Author': 'J.R.R. Tolkien',
+  'Pages': 688},
   {'Title': 'A Tale of Two Cities',
-  'Author': 'Charles Dickens'}
+  'Author': 'Charles Dickens',
+  'Pages': 514}
 ];
 
 libraryDisplay = () => {
@@ -20,7 +24,8 @@ libraryDisplay = () => {
     head.appendChild(t);
     let body = document.createElement('h4');
     let a = document.createTextNode(book['Author']);
-    body.appendChild(a);
+    let p = document.createTextNode(book['Pages']);
+    body.appendChild(a, p);
     node.appendChild(head);
     node.appendChild(body);
     return document.getElementById('shelf').appendChild(node);
@@ -30,8 +35,10 @@ libraryDisplay = () => {
 addToLibrary = () => {
   let title = document.getElementById('title').value;
   let author = document.getElementById('author').value;
+  let pages = document.getElementById('pages').value;
   // let temp = new Book(title, author);
-  Library.push({'Title': title, 'Author': author})
+  let newAddition = [{'Title': title, 'Author': author, 'Pages': pages}];
+  Library = Library.concat(newAddition);
   libraryDisplay();
 }
 
