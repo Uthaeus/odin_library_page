@@ -16,12 +16,11 @@
       <div id="shelf"></div>
 
       <div class="form-box">
-        <form id="form" onsubmit="addToLibrary()">
+        <form id="form">
           <input id="title" class="input" type="text" name="title" placeholder="Title" />
           <input id="author" class="input" type="text" name="author" placeholder="Author" />
           <input id="pages" class="input" type="number" name="pages" placeholder="Pages" />
-          <input id="read" type="checkbox" name="read" />
-          <button id="book-submit" class="input" type="submit">Submit Entry</button>
+          <button id="book-submit" class="input" type="button" onclick="addToLibrary();">Submit Entry</button>
         </form>
       </div>
     </main>
